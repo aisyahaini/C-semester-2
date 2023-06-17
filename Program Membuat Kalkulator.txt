@@ -1,0 +1,25 @@
+Judul = Program Membuat Kalkulator Sederhana 2 Bilangan
+
+Kamus =	a <- integer
+	b <- integer
+	pil <- char
+	hasil <- riil
+
+		// notasi input() dari input (a) sampai input (pil)
+Deskripsi = 	input (a)
+		input (b)
+		input (pil)
+		
+		Depend on (pil)
+	
+		// notasi hitung() dari + sampai *
+		pil('+') = hasil <- a+b
+				output (hasil) // notasi tampil()
+		pil('-') = hasil <- a-b
+				output (hasil)
+		pil('/') = hasil <- a/b
+				output (hasil)
+		pil('*') = hasil <- a*b
+				output (hasil)
+
+

@@ -1,0 +1,79 @@
+#include <iostream>
+using namespace std;
+
+// Struct untuk data HP
+struct HP
+{
+    int storage;
+    int harga;
+    int camera;
+};
+
+// Fungsi untuk melakukan pertukaran elemen
+void swap(HP& a, HP& b)
+{
+    HP temp = a;
+    a = b;
+    b = temp;
+}
+
+// Fungsi untuk sorting data menggunakan bubble sort
+void bubbleSort(HP arr[], int size)
+{
+    bool swapped;
+    int i = 0;
+
+    while (i < size - 1)
+    {
+        swapped = false;
+        for (int j = 0; j < size - i - 1; j++)
+        {
+            // Urutkan berdasarkan storage, harga, dan camera secara berurutan
+            if (arr[j].storage > arr[j + 1].storage && arr[j].harga > arr[j + 1].harga && arr[j].camera > arr[j + 1].camera)
+            {
+                swap(arr[j], arr[j + 1]);
+                swapped = true;
+            }
+        }
+
+        // Jika tidak ada pertukaran dalam satu iterasi, maka array sudah terurut
+        if (!swapped)
+            break;
+
+        i++;
+    }
+}
+
+int main()
+{
+    int size;
+
+    cout << "Input banyak data: ";
+    cin >> size;
+
+    HP data_hp[size];
+
+    cout << "Input data Storage, Harga, dan Camera HP:" << endl;
+    for (int i = 0; i < size; i++)
+    {
+        cout << "Data ke-" << i + 1 << endl;
+        cout << "Storage: ";
+        cin >> data_hp[i].storage;
+        cout << "Harga: ";
+        cin >> data_hp[i].harga;
+        cout << "Camera: ";
+        cin >> data_hp[i].camera;
+    }
+
+    // Mengurutkan array data HP menggunakan bubble sort
+    bubbleSort(data_hp, size);
+
+    cout << "\nData HP setelah diurutkan:" << endl;
+    cout << "Storage\tHarga\tCamera" << endl;
+    for (int i = 0; i < size; i++)
+    {
+        cout << data_hp[i].storage << "\t" << data_hp[i].harga << "\t" << data_hp[i].camera << endl;
+    }
+
+    return 0;
+}

@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1679363154 source:d:\aisyah\kuliah\semester 2\alpro\searching\binary\main.cpp
+	<stdio.h>
+	<iostream>
+	<conio.h>
+	<iomanip>
+

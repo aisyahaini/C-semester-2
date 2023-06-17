@@ -1,0 +1,3 @@
+Judul = Menampilkan
+Kamus = 
+Deskripsi = output (hasil)

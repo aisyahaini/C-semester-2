@@ -1,0 +1,6 @@
+Judul = Menghitung Proses
+Kamus = 
+Deskripsi = 	hasil <- a+b
+		hasil <- a-b
+		hasil <- a/b
+		hasil <- a*b

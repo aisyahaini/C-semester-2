@@ -1,0 +1,5 @@
+Judul = Input Bilangan Untuk Dihitung di Kalkukator Sederhana
+Kamus = 
+Deskripsi = 	input (a)
+		input (b)
+		input (pil)

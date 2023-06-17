@@ -1,0 +1,9 @@
+Judul = Program Kalkulator Sederhana
+
+Kamus = a <- integer
+	b <- integer
+	pil <- char
+
+Deskripsi =	input()
+		hitung()
+		tampil()
